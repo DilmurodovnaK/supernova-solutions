@@ -19,7 +19,7 @@ const config: Config = {
  
       'md': {'max': '785px'},
       // => @media (max-width: 767px) { ... }
-
+'nb': {'min': '706px'},
       'sm': {'max': '654px'},
       // => @media (max-width: 639px) { ... }
       

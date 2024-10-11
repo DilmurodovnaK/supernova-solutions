@@ -23,7 +23,7 @@ const About: React.FC = () => {
       
       <div className="max-w-[50%] lg:max-w-[100%]  ">
       
-        <p className="mb-3 max-w-[700px] xl:text-sm lg:text-base text-xl  tracking-[-1px] font-inter text-start   mm:text-xs">
+        <p className="mb-3 max-w-[700px] xl:text-sm lg:text-base text-xl   font-inter text-start   mm:text-xs">
         
 Welcome to Supernova Solutions—your trusted partner in digital transformation. We specialize in providing top-tier services in web development, creating custom Telegram bots, and designing intuitive UX/UI solutions that enhance user experience and drive engagement. Our team of experienced developers and designers are passionate about delivering innovative solutions tailored to meet the unique needs of each client.
 
