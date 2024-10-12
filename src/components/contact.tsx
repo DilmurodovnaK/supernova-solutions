@@ -86,11 +86,64 @@
 "use client"
 import React from 'react'
 import {motion} from "framer-motion"
+import image from "@/img/image.jpg"
 const Contact = () => {
   return (
-    <motion.div className='mt-16 px-10'
+    <motion.div className='mt-16 px-10 max-w-[1440px]'
     >
       <h4 className='font-bold text-4xl text-center sm:text-3xl'> Contact Us</h4>
+      <div className='flex mt-10 gap-x-10  justify-between lg:flex-col lg:items-center'>
+        <div className='max-w-[50%] lg:hidden'>
+          <img src={image.src} alt="" className='max-w-[400px] items-center max-h-[400px] bg-cover rounded-[50%]' />
+        </div>
+        <div className='max-w-[50%] items-end'>
+             <form className="space-y-4">
+      <div className="flex flex-col md:flex-row gap-4  ">
+           <input
+              type="text"
+              placeholder="Имя"
+              className="flex-1 p-3 border border-gray-300 rounded max-w-[500px] focus:outline-none focus:border-[#2323FF] text-black"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Фамилия"
+              className="flex-1 p-3 border border-gray-300 rounded max-w-[500px] focus:outline-none focus:border-[#2323FF] text-black"
+              required
+            />
+          </div>
+
+          <input
+            type="email"
+            placeholder="Электронная почта"
+            className="w-full p-3 border border-gray-300 rounded max-w-[500px] focus:outline-none focus:border-[#2323FF] text-black"
+            required
+          />
+
+          <textarea
+            placeholder="Описание"
+            className="w-full p-3 border border-gray-300 rounded max-w-[500px] focus:outline-none focus:border-[#2323FF] text-black"
+            rows={4}
+            required
+          />
+
+          <input
+            type="tel"
+            placeholder="Мобильный номер"
+            className="w-full p-3 border border-gray-300 rounded max-w-[500px] focus:outline-none focus:border-[#2323FF] text-black"
+            required
+          />
+
+          <button
+            type="submit"
+            className="w-full p-3 bg-[#2323FF] text-white rounded-lg max-w-[500px] hover:bg-blue-600 transition duration-200"
+          >
+            Подтвердить
+          </button>
+        </form>
+        </div>
+       
+      </div>
       
       </motion.div>
   )
